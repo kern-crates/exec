@@ -22,7 +22,7 @@ use elf::parse::ParseAt;
 use elf::segment::ProgramHeader;
 use elf::segment::SegmentTable;
 use elf::ElfBytes;
-use kernel_guard::NoPreempt;
+use preempt_guard::NoPreempt;
 use axtype::{align_down_4k, align_up_4k, PAGE_SIZE};
 use mmap::FileRef;
 use mmap::{MAP_ANONYMOUS, MAP_FIXED};
