@@ -12,6 +12,7 @@ LD_SCRIPT=$BUILD_DIR/linker_riscv64-qemu-virt.lds
 GLOBAL_CFG='--cfg=blk --cfg=bus="mmio" --cfg=block_dev="virtio-blk"'
 export RUSTFLAGS="-C link-arg=-T$LD_SCRIPT -C link-arg=-no-pie $GLOBAL_CFG"
 
+rm -rf ./btp
 git clone git@github.com:shilei-massclouds/btp
 make -C btp
 
