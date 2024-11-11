@@ -1,0 +1,11 @@
+{
+  "name": "exec",
+  "description": "Exec systemcalls for monolithic kernel.",
+  "authors": [{
+    "name": "Shi Lei",
+    "email": "shi_lei@massclouds.com"
+  }],
+  "keywords": ["exec", "monolithic"],
+  "repo": "shilei-massclouds/exec",
+  "doc_url": "https://github.com/shilei-massclouds/exec/blob/main/README.md"
+}

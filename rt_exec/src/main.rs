@@ -20,7 +20,7 @@ pub extern "Rust" fn runtime_main(cpu_id: usize, dtb: usize) {
 }
 
 pub fn init(cpu_id: usize, dtb: usize) {
-    axlog2::init("error");
+    axlog2::init("debug");
     exec::init(cpu_id, dtb);
     axtrap::init(cpu_id, dtb);
 }
